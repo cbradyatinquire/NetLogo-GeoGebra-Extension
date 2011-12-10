@@ -209,7 +209,9 @@ public class GeogebraInView extends DefaultClassManager {
 		
 		SwingUtilities.invokeLater( new Runnable() {
 		     public void run() {
-		    	 getGgbAPI().setCoordSystem(xmin, xmax, ymin, ymax);    	 
+		    	 getGgbAPI().setCoordSystem(xmin, xmax, ymin, ymax);  
+		    	 System.err.println("HELLOW!!");
+		    	 getGalleryAPI().setCoordSystem(xmin, xmax, ymin, ymax);
 		     }
 		 } );
 		
